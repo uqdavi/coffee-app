@@ -1,5 +1,8 @@
-import { renderHomePage } from './pages/homePage.js';
+import { startRouter } from './router.js';
+import * as cart from './cart/cartStorage.js';
+
+window.cart = cart;
 
 const root = document.getElementById('root');
 
-renderHomePage(root);
+startRouter(root);

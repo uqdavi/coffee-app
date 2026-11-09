@@ -1,5 +1,6 @@
 import { getCoffees } from '../api/coffeeApi.js';
 import { createCoffeeCard } from '../components/coffeeCard.js';
+import { addToCart } from '../cart/cartStorage.js';
 
 export async function renderHomePage(root) {
     root.replaceChildren();
@@ -24,9 +25,7 @@ export async function renderHomePage(root) {
         row.classList.add('row', 'row-cols-1', 'row-cols-md-2', 'row-cols-lg-3', 'g-4');
 
         coffees.forEach((coffee) => {
-            const card = createCoffeeCard(coffee, (c) => {
-                console.log('Adicionar ao carrinho:', c.title);
-            });
+            const card = createCoffeeCard(coffee, addToCart);
             row.appendChild(card);
         });
 
