@@ -22,7 +22,6 @@ export function getCart() {
     return JSON.parse(texto);
 }
 
-
 // Avisa o resto do site que o carrinho mudou (explicação mais abaixo)
 function notifyChange() {
     const aviso = new Event('cart-updated');
