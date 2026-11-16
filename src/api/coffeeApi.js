@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001/coffee';
+const API_URL = 'https://coffee-app-3cu0.onrender.com/coffee/';
 
 export async function getCoffees() {
   const response = await fetch(API_URL);
