@@ -19,7 +19,7 @@ export function createHeader() {
     const brand = document.createElement('a');
     brand.classList.add('navbar-brand');
     brand.href = '#/';
-    brand.textContent = 'Loja de Café';
+    brand.textContent = 'Coffee App';
 
     // ---- 4. O botão do carrinho (lado direito) ----
     // É um link com aparência de botão. Clicar leva para a página do carrinho.
