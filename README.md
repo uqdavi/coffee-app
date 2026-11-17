@@ -11,7 +11,7 @@ Projeto desenvolvido para a disciplina de **Programação Visual e Autoria Web**
 
 ## 📸 Demonstração
 
-> `![Página inicial](screenshots/home.png)`
+![Página inicial](screenshots/home.png)
 
 ---
 
